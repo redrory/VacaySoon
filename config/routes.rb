@@ -50,7 +50,7 @@ VacaySoon::Application.routes.draw do
   # just remember to delete public/index.html.
    root :to => "user#signup"
    
-   #match "signup" => "user#signup"
+   match "signup" => "user#signup"
 
   # See how all your routes lay out with "rake routes"
 

@@ -58,10 +58,6 @@
 						
 						<h2>Interested?</h2>
 					<h3>Tell us a little about your company</h3>
-					<%= form_for @user do |u| %>
-						<%= u.text_field :email %>
-						<%= select("user", User::CATEGORIES, {:include_blank => true}) %>
-					<% end %>
 					</div>
 				</div>
 			</div>

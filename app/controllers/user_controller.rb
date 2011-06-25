@@ -1,19 +1,19 @@
 class UserController < ApplicationController
   
   def signup
-    @title = "Sign up for Early Access"
+    @title = "Vacay Tracker | Employee Vacation Tracking"
     @user = User.new
     @plan = Plan.all
   end
   
   def create
-    @title = "test"
+    @title = "Vacay Tracker | Employee Vacation Tracking"
        @user = User.new(params[:user])
        if @user.save
          flash[:success] = "Thanks for signing up. We polishing the wheels before the launch. We'll let you know when we are ready :)"
          redirect_to :root
        else
-         @title = "Sign up"
+         @title = "Vacay Tracker | Employee Vacation Tracking"
          flash[:error] = "Please enter a valid email address"
          redirect_to :root
 

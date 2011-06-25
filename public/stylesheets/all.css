@@ -470,11 +470,19 @@ q:after{content:'"';}
 .screenshots img{
 	display:block;
 }
+
+/* me */
+
+
+
+
+
+
 /*buttons*/
 #buttons { padding: 20px 0 40px;}
 #buttons .button { margin: 10px 0 10px 10px;}
 #buttons .clear { height:20px;}
-.button, .button span { display: inline-block; font-weight: bold; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; text-shadow:0 -1px 0 rgba(0,0,0,0.2); color:#fff!important; background-repeat: no-repeat; white-space: nowrap; }
+.button, .button span { display: inline-block; font-weight: normal; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; text-shadow:0 -1px 0 rgba(0,0,0,0.2); color:black !important; background-repeat: no-repeat; white-space: nowrap; }
 .button > span {  background-position:left top;}
 .button > span > span { background-position:right top;}
 .button:hover {text-decoration: none; opacity: 0.85; filter: alpha(opacity=85);}

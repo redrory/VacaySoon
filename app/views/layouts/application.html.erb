@@ -2,13 +2,19 @@
 <html>
 <head>
   <title>VacaySoon</title>
+<%= csrf_meta_tag %>
+<%= render 'layouts/stylesheets'%>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :all %>
-  <%= csrf_meta_tag %>
+  
 </head>
 <body>
-
-<%= yield %>
-
+	<section class="round">
+			<% flash.each do |key, value| %>
+			          <div class="flash <%= key %>"><%= value %></div>
+			        <% end %>
+	        <%= yield %>
+			
+	      </section>
 </body>
 </html>

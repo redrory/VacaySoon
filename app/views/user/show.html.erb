@@ -22,11 +22,11 @@
 	<div class="w1 clearfix png_bg">
 		<div class="container_12">
 			<div id="header" class="grid_12">
-				<h1 class="logo"><a href="http://vacaysoon.heroku.com"><strong>Vacay</strong>  <strong>Tracker</strong></a></h1>
+				<h1 class="logo"><a href="index.html"><strong>Vacay</strong>  <strong>Tracker</strong></a></h1>
 				
 				<div class="side">
-					<strong class="call">Plans start at</strong>
-					<strong class="phone">$19/month</strong>
+					<strong class="call">Call Now</strong>
+					<strong class="phone">876-569-7112</strong>
 				</div>
 				
 			</div>
@@ -37,48 +37,14 @@
 				<div class="main-holder">
 					<div class="column">
 						
-						<h2>How we help you</h2>
-						<ul class="tags">
-							<li class="people">
-								<h3><a href="#">Make your employees happy</a></h3>
-								<p>Email notifications of employees milestones.</p>
-							</li>
-							<li class="clock">
-								<h3><a href="#">Save Time</a></h3>
-								<p>One Click Vacation & Sick day Report Generation. </p>
-							</li>
-							<li class="wifi">
-								<h3><a href="#">Avoid Excess Vacation days</a></h3>
-								<p>Set vacation and sick day limits.</p>
-							</li>
-						</ul>
+					thanks
 						
 					</div>
 					<div class="column2">
-						
-						<h2>Interested?</h2>
-					<h1>Tell us a little about your company</h1>
-					<div id="earlyAccess">
-						
-						
-						<%= form_for @user do |u| %>
-						<%= render 'shared/error_messages' %>
-							<p><%= u.label :size, 'How many employees do you have?' %>: </p>
-							<p><%= select_tag "user[size]", options_from_collection_for_select(@plan, 'name', 'size') %></p>
-							
-							<p><%= u.label :email, 'What\'s your email address?' %>:</p>
-							<p><%= u.text_field :email %></p>
-							<%#= u.submit%>
-							<div id="form_submit">
-								<%= u.submit "Get Early Access"%>	
-							</div>
-							
-							
-
-						<% end %>
+					
 					</div>
 					<p>
-						
+						<a href="create" class="button large lightgreen"><span><span>Get Early Access</span></span></a><br />
 					</p>
 					</div>
 				</div>
@@ -108,13 +74,17 @@
 	<div id="footer" class="clearfix png_bg">
 		<div class="container_12">
 			<div class="grid_12 holder">
-				<span class="copy">2011 &copy; VacayTracker.com.</span>
+				<span class="copy">2010 &copy; Worry Free Labs LLC.</span>
 				<ul class="social-networks">
-					<li><a href="http://www.twitter.com/vacaytracker" class="twitter png_bg">twitter</a></li>
+					<li><a href="#" class="vimeo png_bg">vimeo</a></li>
+					<li><a href="#" class="linkedin png_bg">linkedin</a></li>
+					<li><a href="#" class="facebook png_bg">facebook</a></li>
+					<li><a href="#" class="twitter png_bg">twitter</a></li>
+					<li><a href="#" class="flickr png_bg">flickr</a></li>
 				</ul>
 				<ul>
-				<!--	<li><a href="#">Terms and Conditions</a></li>
-					<li><a href="#">Privacy Statement</a></li>-->
+					<li><a href="#">Terms and Conditions</a></li>
+					<li><a href="#">Privacy Statement</a></li>
 				</ul>
 			</div>
 			<div class="clear">&nbsp;</div>
